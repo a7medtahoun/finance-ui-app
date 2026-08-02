@@ -25,9 +25,19 @@ class AppStyle {
     fontSize: AppFonts.s12.sp,
     color: AppColor.grey,
   );
-  static TextStyle grey14w600style=TextStyle(
-                      color: AppColor.grey14w600style,
-                      fontSize: AppFonts.s14.sp,
-                      fontWeight:  AppFonts.w600,
-                    );
+  static TextStyle grey14w600style = TextStyle(
+    color: AppColor.grey14w600style,
+    fontSize: AppFonts.s14.sp,
+    fontWeight: AppFonts.w600,
+  );
+  static TextStyle white12w700style = TextStyle(
+    color: AppColor.scaffoldColor,
+    fontSize: AppFonts.s12.sp,
+    fontWeight: AppFonts.w700,
+  );
+    static TextStyle white24w600style = TextStyle(
+    color: AppColor.scaffoldColor,
+    fontSize: AppFonts.s24.sp,
+    fontWeight: AppFonts.w600,
+  );
 }

@@ -5,7 +5,7 @@ import 'package:finance_app_ui/core/widgets/custom_space.dart';
 import 'package:finance_app_ui/core/widgets/custom_textfield.dart';
 import 'package:finance_app_ui/core/widgets/outline_button_widget.dart';
 import 'package:finance_app_ui/core/widgets/primary_button_widget.dart';
-import 'package:finance_app_ui/feature/auth/widgets/back_button_widget.dart';
+import 'package:finance_app_ui/core/widgets/back_button_widget.dart';
 import 'package:finance_app_ui/feature/auth/widgets/custom_last_widget.dart';
 import 'package:finance_app_ui/feature/auth/widgets/custom_orLogin_widget.dart';
 import 'package:finance_app_ui/feature/auth/widgets/headline.dart';
@@ -41,7 +41,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               children: [
                 BackButtonWidget(
                   ontap: () {
-                   context.go(AppRoutes.onboardscreen);}
+                   }
                 ),
                 CustomSpaceHeight(28.h),
                 Headline(
@@ -107,7 +107,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   width: 331.w,
                   height: 56.h,
                   onpress: () {
-                    if (registerKey.currentState!.validate()) {}
+                    if (registerKey.currentState!.validate()) {
+                      context.go(AppRoutes.otpScreen);
+                    }
                   },
                   buttonText: "Register",
                 ),
@@ -149,7 +151,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                
                   
                    getLastWidget(ontap: (){
-                   context.go(AppRoutes.navigationBar);
+                   context.go(AppRoutes.loginscreen);
                    },)
               
               ],

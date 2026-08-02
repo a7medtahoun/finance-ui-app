@@ -5,5 +5,6 @@ class AppRoutes {
   static  String forgotPaswordscreen="/forgotPaswordscreen";
   static  String createNewPassword="/createNewPassword";
   static  String passwordchanged="/passwordchanged";
-  static  String navigationBar="/navigationBar";
+  static  String otpScreen="/otpScreen";
+  static  String mainScreen="/mainScreen";
 }

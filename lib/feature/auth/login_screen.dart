@@ -6,7 +6,7 @@ import 'package:finance_app_ui/core/widgets/custom_space.dart';
 import 'package:finance_app_ui/core/widgets/custom_textfield.dart';
 import 'package:finance_app_ui/core/widgets/outline_button_widget.dart';
 import 'package:finance_app_ui/core/widgets/primary_button_widget.dart';
-import 'package:finance_app_ui/feature/auth/widgets/back_button_widget.dart';
+import 'package:finance_app_ui/core/widgets/back_button_widget.dart';
 import 'package:finance_app_ui/feature/auth/widgets/custom_last_widget.dart';
 import 'package:finance_app_ui/feature/auth/widgets/custom_orLogin_widget.dart';
 import 'package:finance_app_ui/feature/auth/widgets/headline.dart';
@@ -23,7 +23,6 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   bool ispassword = true;
-  final regex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
   GlobalKey<FormState> loginKey = GlobalKey<FormState>();
   TextEditingController emailController=TextEditingController();
   TextEditingController passController=TextEditingController();
@@ -39,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 BackButtonWidget(
                   ontap: () {
-                   context.go(AppRoutes.onboardscreen);}
+                  }
                 ),
                 CustomSpaceHeight(28.h),
                 Headline(),
@@ -93,7 +92,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   width: 331.w,
                   height: 56.h,
                   onpress: () {
-                    if (loginKey.currentState!.validate()) {}
+                    if (loginKey.currentState!.validate()) {
+
+                    }
                   },
                   buttonText: "Login",
                 ),
