@@ -93,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 56.h,
                   onpress: () {
                     if (loginKey.currentState!.validate()) {
-
+                    context.go(AppRoutes.mainScreen);
                     }
                   },
                   buttonText: "Login",

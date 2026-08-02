@@ -78,7 +78,7 @@ class _OtpScreenState extends State<OtpScreen> {
               CustomSpaceHeight(38.h),
               PrimaryButtonWidget(
                 onpress: () {
-                  context.go(AppRoutes.registerscreen);
+                  context.go(AppRoutes.mainScreen);
                 },
                 buttonText: "Verify",
               ),

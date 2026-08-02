@@ -1,5 +1,4 @@
 import 'package:finance_app_ui/core/app_assets/app_assets.dart';
-import 'package:finance_app_ui/core/styling/app_style.dart';
 import 'package:finance_app_ui/core/widgets/custom_space.dart';
 import 'package:finance_app_ui/core/widgets/header_widget.dart';
 import 'package:finance_app_ui/feature/main_screen/profile/widget/field_widget.dart';

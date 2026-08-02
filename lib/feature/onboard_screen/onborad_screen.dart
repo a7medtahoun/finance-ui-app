@@ -22,7 +22,7 @@ class OnboradScreen extends StatelessWidget {
             CustomSpaceHeight(21.h),
             PrimaryButtonWidget(
               onpress: () {
-                GoRouter.of(context).pushNamed(AppRoutes.mainScreen);
+                GoRouter.of(context).pushNamed(AppRoutes.loginscreen);
               },
               width: 331.w,
               height: 56.h,

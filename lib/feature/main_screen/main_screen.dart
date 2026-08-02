@@ -5,7 +5,6 @@ import 'package:finance_app_ui/feature/main_screen/card/card_screen.dart';
 import 'package:finance_app_ui/feature/main_screen/home/home_screen.dart';
 import 'package:finance_app_ui/feature/main_screen/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
